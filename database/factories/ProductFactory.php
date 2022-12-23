@@ -19,7 +19,7 @@ class ProductFactory extends Factory
     public function definition()
     {
         $type_gender = $this->faker->randomElement(['W', 'w', 'M', 'm', 'B', 'b']); // male Women's baby
-        $name = $this->faker->realText(rand(10, 30));
+        $name = $this->faker->realText(rand(10, 20));
 
         return [
             'category_id' => Category::factory(),
